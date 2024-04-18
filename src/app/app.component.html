@@ -1,15 +1,43 @@
-<div class="contenedor">
-  <div *ngIf="valor1">
-    <h1> Texto 1</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+<div class="container">
+  <div *ngIf="value1">
+    <h1>Text 1</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+  </div>
+</div>
+<div class="container">
+  <div *ngIf="value2">
+    <h1>Text 2</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
   </div>
 </div>
 
-<div class="contenedor">
+<hr />
+
+<button (click)="value1 = true">Text 1</button>
+<button (click)="value2 = !value2">Text 2</button>
+
+<hr />
+<p>Value1 : {{ value1 }}</p>
+<p>Value2 : {{ value2 }}</p>
+
+<!--
+<div class="container">
   <div *ngIf="valor2 ; else otroTexto ">
     <h1> Texto 2</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -68,3 +96,4 @@
 
 <button (click)="color = 'red' " [ngClass]="{ 'activo': color == 'red' }" >Rojo</button>
 <button (click)="color = 'green' " [ngClass]="color" >Verde</button>
+-->
