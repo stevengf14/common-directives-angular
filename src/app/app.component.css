@@ -3,6 +3,10 @@ input,
 button {
   outline: none;
 }
+
+div div {
+  border: solid red 4px;
+}
 .container {
   border: solid;
   width: 38%;
