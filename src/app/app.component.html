@@ -48,6 +48,20 @@
 <p>Value1 : {{ value1 }}</p>
 <p>Value2 : {{ value2 }}</p>
 
+<h1>Task Manager</h1>
+
+<div [ngSwitch]="weekDays">
+  <p class="item" *ngSwitchCase="'monday'">Coffe and work</p>
+  <p class="item" *ngSwitchCase="'tuesday'">Avoid boats</p>
+  <p class="item" *ngSwitchCase="'wednesday'">Survive this day</p>
+  <p class="item" *ngSwitchCase="'thursday'">Pre friday</p>
+  <p class="item" *ngSwitchCase="'friday'">Update social media</p>
+  <p *ngSwitchCase="1">-------13-------</p>
+
+  <p *ngSwitchDefault>Choose a day to knowy your future</p>
+</div>
+<input type="text" [(ngModel)]="weekDays" />
+
 <!--
 <div class="container">
   <div *ngIf="valor2 ; else otroTexto ">
