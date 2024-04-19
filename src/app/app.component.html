@@ -62,6 +62,15 @@
 </div>
 <input type="text" [(ngModel)]="weekDays" />
 
+<h1>Styles</h1>
+
+<div class="square" [ngStyle]="{ background: color ? color : 'peru' }"></div>
+
+<button (click)="color = 'red'" [ngClass]="{ active: color == 'red' }">
+  Red
+</button>
+<button (click)="color = 'green'" [ngClass]="color">Green</button>
+
 <!--
 <div class="container">
   <div *ngIf="valor2 ; else otroTexto ">
